@@ -81,14 +81,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-bar {
-    min-width: 0%;
-    justify-content: space-around;
-/*giving parent flex for purpose of using flex-basis
-on a*/
-
-}
-
-.nav-bar {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -189,13 +181,11 @@ h1 {
 }
 
 #address {
-
 	margin: 40px 0px 40px 0px;
 }
 
 #address .col .col-address {
 	padding: 20px 0px 20px 0px;
-
 }
 
 footer{
@@ -204,7 +194,7 @@ footer{
 	margin: 40px 0px 40px 0px;
 }
 
-.hide-rule {
+hr {
     display: none;
 }
 
@@ -214,18 +204,22 @@ footer{
         width: 95%;
         margin:0 auto;
     }
+
     #navigation {
         flex-direction: column-reverse;
         justify-content: space-between;
     }
+
     .nav-bar {
         margin: 5% auto;
     }
+
     #main-header {
         justify-content: center;
         align-items: center;
         margin: 80px 0px;
     }
+
     #header-image{
         display: none;
     }
@@ -239,22 +233,59 @@ footer{
 @media screen and (max-width: 500px) {
     
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 100%;
         margin:0 auto;
     }
+
     #navigation {
-        flex-flow: column nowrap;
+      
     }
+
    .nav-bar {
+        height: 30%;
         flex-direction: column;
         align-items: center;
     }
-    #innovation{
-        max-width: 100%;
+
+    a {
+        font-size: 120%;
+        margin: 2.5% auto;
     }
 
-    
+    hr {
+        display: flex;
+        flex-direction: column;
+        min-width: 110%;
+    }
+
+    #innovation{
+        
+    }
+
+    #top-content{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    #top-content .col{
+        width: 90%;
+        justify-content: center; 
+        margin: 5% auto;
+    }
+
+    .middle-img {    
+        justify-content: center; 
+        width: 100%;
+    }
+    #bottom-content{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    #bottom-content .col{
+        width: 100%;
+        justify-content: center; 
+        margin: 5% auto;
+    }
+    .col .col-address {
+        margin: 5% auto;
+        }
 }
