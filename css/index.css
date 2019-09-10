@@ -68,9 +68,16 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	width: 90%;
+	width: 1000px;
 	margin:0 auto;
 }
+
+/* .services-container {
+    width: 90%;
+    margin: 0 auto;
+
+} */
+
 
 #navigation {
 	display: flex;
@@ -83,16 +90,18 @@ h1, h2, h3, h4, h5 {
 .nav-bar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
 a {
     width: 20%;
+    margin-left: 0;
+    margin-right: 5%;
 	justify-content: space-between;
 	color: gray;
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -288,4 +297,59 @@ hr {
     .col .col-address {
         margin: 5% auto;
         }
+}
+
+/* services styles */
+/* services navigation uses same styling as index*/
+
+.services-container {
+    width: 880px;
+    margin: 0 auto;
+
+}
+
+#services-content {
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#services-content h3 {
+    font-size: 1.5rem;
+}
+
+#services-content .services-partition {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    border-bottom: 1px solid black;
+
+}
+
+.expertise-areas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.expertise {
+    height: 50%;
+    width: 40%;
+    margin: 2% 2.5%;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+
+.expertise-button{
+    width: 48%;
+    height: 12%;
+    margin-top: 4%;
+    padding: 2% 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
 }
